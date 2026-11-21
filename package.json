@@ -1,0 +1,56 @@
+{
+  "name": "dsh-model-theme",
+  "version": "1.1.0",
+  "description": "DeepSeek Harness 七模型主题：按当前模型切换背景、专属主色、4 秒过场动画、模型桌宠与全局下拉样式；并为 Grok、豆包、元宝等扩展模型预置官方默认色。",
+  "private": false,
+  "author": "HD1014",
+  "license": "MIT",
+  "homepage": "https://github.com/HD1014/dsh-model-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HD1014/dsh-model-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HD1014/dsh-model-theme/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-theme",
+    "desktop-pet",
+    "cordis"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "assets/",
+    "docs/",
+    "tools/",
+    "cordis.patch.yml"
+  ],
+  "scripts": {
+    "check": "node --check lib/client.js"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

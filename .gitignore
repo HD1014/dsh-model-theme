@@ -1,0 +1,17 @@
+node_modules/
+*.bak
+*.bak-*
+*.log
+.DS_Store
+Thumbs.db
+
+# 134 MB 桌宠包走 Release 资产，不进 Git 仓库
+assets/dsh-model-pets.zip
+assets/*.zip
+
+# 本地构建产物备份
+lib/*.bak
+lib/*.bak-*
+
+# 打包产物
+dist/
