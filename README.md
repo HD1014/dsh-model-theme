@@ -6,7 +6,7 @@
 
 **English:** A third-party local theme plugin for DeepSeek Harness — one harness, every world. Per-model accents, backgrounds, transitions, and desktop pets.
 
-> 本项目为第三方独立开源插件，非 DeepSeek Harness 官方组件，仅调用 DSH 开放的插件 / 槽位接口。
+> 本项目为第三方独立开源插件，非官方组件，仅调用 DSH 开放的插件 / 槽位接口。安装、使用与注意事项均以中文撰写。
 
 ![DSH Model Theme 主视觉](promo/images/poster-01-hero.png)
 
@@ -33,7 +33,7 @@
 ## 功能
 
 - **七模型主题**：DeepSeek / GLM / Claude / GPT / Gemini / Kimi / Qwen，各自独立背景、专属主色和侧栏色调。
-- **扩展模型默认色**：为 Grok（`#111111`）、豆包（`#4E6EF2`）、元宝（`#FF8A00`）、文心（`#2932E1`）、MiniMax（`#FF4D4F`）、NVIDIA（`#76B900`）、Copilot（`#0078D4`）、QwQ（`#7D5CEC`）预置官方风格主色与桌宠映射；Llama / Mistral / Gemma / Perplexity 预置主色。接入后无需手动调色，不会回退成统一蓝色。
+- **扩展模型默认色**：为 Grok（`#111111`）、豆包（`#4E6EF2`）、元宝（`#FF8A00`）、文心（`#2932E1`）、海螺（`#FF4D4F`）、CUDA（`#76B900`）、Copilot（`#0078D4`）、QwQ（`#7D5CEC`）预置默认主色与桌宠映射；Llama / Mistral / Gemma / Perplexity 预置主色。接入后无需手动调色，不会回退成统一蓝色。
 - **顶部模型下拉防误关**：第一次打开后，连续点同一个触发器保持展开；点外部或 Esc 关闭，不再出现“前两次打不开、第三次才开、点空白又循环”。
 - **模型桌宠卡片辉光**：底部光晕与边框跟随顶部选中的模型名，A→B 切换时 460ms 弹性过渡到 B 模型专属色。
 - **4 秒过场**：切模型时播放开场、停留、收尾动画；可逐模型关闭主题或动画。
